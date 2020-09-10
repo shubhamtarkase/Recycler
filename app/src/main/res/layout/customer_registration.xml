@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:layout_gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".register" >
+
+
+
+    <TextView
+        android:id="@+id/still"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:textColor="#000000"
+        android:text="Registration" />
+
+    <ImageView
+        android:id="@+id/cProfile"
+        android:layout_marginTop="10dp"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:scaleType="fitXY"
+        android:layout_below="@+id/still"
+        android:src="@drawable/ic_camera_alt_black_24dp" />
+
+
+    <EditText
+        android:id="@+id/customerName"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_below="@+id/cProfile"
+        android:drawableLeft="@drawable/ic_person_black_24dp"
+        android:inputType="textPersonName"
+        android:hint="Enter full name" />
+
+    <EditText
+        android:id="@+id/customerAddress"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_home_black_24dp"
+        android:layout_below="@+id/customerCell"
+        android:inputType="textPostalAddress"
+        android:hint="Enter valid address" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/customerName"
+        android:drawableLeft="@drawable/ic_phone_iphone_black_24dp"
+        android:hint="Enter phone no"
+        android:visibility="gone"
+        android:inputType="phone"
+        android:id="@+id/customerCell"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/customerName"
+        android:hint="Enter Email id"
+        android:inputType="textEmailAddress"
+        android:drawableLeft="@drawable/ic_email_black_24dp"
+        android:id="@+id/customerEmailId"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:id="@+id/customerPic"
+        android:textColor="#ffffff"
+        android:layout_marginTop="10dp"
+        android:visibility="gone"
+        android:background="@color/colorPrimary"
+        android:text="select photo"
+        android:layout_below="@+id/customerAddress"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:id="@+id/customerSubmit"
+        android:layout_marginTop="2dp"
+        android:text="submit"
+        android:textColor="#ffffff"
+        android:background="@color/colorPrimaryDark"
+        android:layout_below="@+id/customerAddress"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/error"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/cProfile"/>
+
+    <ProgressBar
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/cProgressBar"/>
+
+
+</LinearLayout>

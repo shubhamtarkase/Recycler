@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:layout_gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".register" >
+
+    <ProgressBar
+
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:visibility="gone"
+        android:layout_marginTop="2dp"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/progressBar"/>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:textColor="#000000"
+        android:text="Registration" />
+
+    <ImageView
+        android:id="@+id/profile"
+        android:layout_marginTop="10dp"
+        android:layout_width="130dp"
+        android:layout_height="120dp"
+        android:scaleType="fitXY"
+        android:visibility="gone"
+        android:layout_below="@+id/textView3"
+        android:src="@drawable/ic_camera_alt_black_24dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/error"
+        android:gravity="center"
+        android:layout_below="@id/profile"/>
+
+
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_below="@+id/profile"
+        android:inputType="textPersonName"
+        android:hint="Enter shop name" />
+
+    <EditText
+        android:id="@+id/address"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cell"
+        android:inputType="textPostalAddress"
+        android:hint="Enter valid address" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/name"
+        android:hint="Enter phone no"
+        android:inputType="phone"
+        android:id="@+id/cell"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/name"
+        android:hint="Enter Email id"
+        android:inputType="textEmailAddress"
+        android:id="@+id/emailid"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/emailid"
+        android:hint="Set password"
+        android:inputType="numberPassword"
+        android:id="@+id/password"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:id="@+id/pic"
+        android:textColor="#ffffff"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorPrimary"
+        android:text="select photo"
+        android:onClick="select"
+        android:visibility="invisible"
+        android:layout_below="@+id/address"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:id="@+id/submit"
+        android:layout_marginTop="2dp"
+        android:text="submit"
+        android:onClick="sumbit"
+        android:textColor="#ffffff"
+        android:background="@color/colorPrimaryDark"
+        android:layout_below="@+id/address"/>
+</LinearLayout>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".ScrapImage">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:visibility="invisible">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            app:srcCompat="@drawable/ic_add_shopping_cart_black_24dp" />
+
+        <TextView
+            android:id="@+id/paperPrize"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:layout_marginTop="10dp"
+            android:padding="5dp"
+            android:text="Paper in KG: "
+            android:textColor="@color/colorPrimaryDark" />
+
+        <TextView
+            android:id="@+id/plasticPrize"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:padding="5dp"
+            android:text="Plastic in KG: "
+            android:textColor="@color/colorPrimaryDark" />
+
+        <TextView
+            android:id="@+id/metalPrize"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:padding="5dp"
+            android:text="Metal in KG: "
+            android:textColor="@color/colorPrimaryDark" />
+
+        <TextView
+            android:id="@+id/totalValue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:padding="8dp"
+            android:text="Approximate Prize you get: "
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/testImage"
+            android:visibility="gone"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/capture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:onClick="captureImage"
+        android:text="capture trash image" />
+
+    <Button
+        android:id="@+id/confirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/green"
+        android:layout_marginTop="30dp"
+        android:onClick="confirmOrder"
+        android:visibility="gone"
+        android:text="confirm order" />
+
+</LinearLayout>
